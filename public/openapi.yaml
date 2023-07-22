@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: CryptoGPT Plugin
+  description: A plugin that allows the user to get the current price of Bitcoin and other cryptocurrencies. 
+  version: 'v1'
+paths:
+  /api/crypto/price:
+    get:
+      operationId: getPrice
+      summary: Get the price of crypto
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getPriceResponse'
+components:
+  schemas:
+    getPriceResponse:
+      type: object
+      properties:
+        bitcoin:
+          type: object
+          properties:
+            usd: 
+              type: string
+          description: The price of bitcoin.

@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "CryptoGPT Plugin",
+    "name_for_model": "cryptogpt",
+    "description_for_human": "Check real-time prices of Bitcoin and other cryptocurrencies using ChatGPT",
+    "description_for_model": "Help the user obtain real-time price of Bitcoin and other cryptocurrencies.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://cryptogpt-one.vercel.app/openapi.yaml"
+    },
+    "logo_url": "https://cryptogpt-one.vercel.app/logo.png",
+    "contact_email": "pipistik.bunciak@gmail.com",
+    "legal_info_url": "https://cryptogpt-one.vercel.app/legal"
+}
